@@ -1,10 +1,11 @@
 # Roadmap
 
+## CLI
+
+- [ ] Start app
+
 ## ETL
 
-- [ ] CLI
-  - [ ] Start app
-  - [ ] Pass args
 - [ ] NASA API query strings
 - [ ] Job
   - [ ] Steps
