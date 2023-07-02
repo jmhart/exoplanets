@@ -2,7 +2,9 @@
 
 ## CLI
 
-- [ ] Start app
+- [x] Start app from package
+- [ ] Start app from cli
+
 
 ## ETL
 
