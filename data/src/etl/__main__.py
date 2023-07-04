@@ -2,7 +2,7 @@
 """
 import sys
 
-from etl import app
+from src.etl import app
 
 
 def main() -> str:
