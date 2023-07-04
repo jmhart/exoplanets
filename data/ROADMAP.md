@@ -5,7 +5,6 @@
 - [x] Start app from package
 - [ ] Start app from cli
 
-
 ## ETL
 
 - [ ] NASA API query strings
