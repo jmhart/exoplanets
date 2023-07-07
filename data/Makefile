@@ -12,7 +12,7 @@ show: ## Show the current environment.
 	@pipenv run python -V
 
 .PHONY: init
-init: ## Install dependencies and spawn .
+init: ## Install dependencies and spawn virtualenv shell.
 	@pipenv shell
 	@pipenv install
 
