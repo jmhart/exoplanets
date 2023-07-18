@@ -17,10 +17,3 @@ coverage = "*"
 
 [requires]
 python_version = "3.11"
-
-[scripts]
-init = "pipenv shell"
-test = "python -m pytest"
-test_perf = "python -m pytest --durations=0 --durations-min=1.0"
-cov = "python -m pytest --cov --cov-branch --cov-fail-under=100"
-start = "python -m etl"
