@@ -1,6 +1,7 @@
 """Base
 """
-from src.etl.query.spec import QuerySpec, Specs
+
+from query.spec import QuerySpec, Specs
 
 
 class Query:
