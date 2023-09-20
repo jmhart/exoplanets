@@ -1,4 +1,4 @@
-from src.etl.query.base import Query
+from query.base import Query
 
 
 def test_base_query_returns_string():
