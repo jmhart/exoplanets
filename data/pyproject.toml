@@ -4,15 +4,9 @@ build-backend = "setuptools.build_meta"
 
 [tool.pytest.ini_options]
 minversion = "6.0"
-addopts = "--maxfail=2 -rf"  # exit after 2 failures, report fail info
-pythonpath = [
-  "src"
-]
-testpaths = [
-    "test"
-]
+addopts = "--maxfail=2 -rf" # exit after 2 failures, report fail info
+pythonpath = ["src"]
+testpaths = ["test"]
 
-[project]
-packages = [
-  { include = "src" }
-]
+[tool.coverage.run]
+omit = ["test/*"]

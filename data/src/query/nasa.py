@@ -2,7 +2,6 @@
 
 
 from query.base import Query
-from query.spec import QuerySpec
 
 
 class NasaQuery(Query):
@@ -18,7 +17,7 @@ class NasaQuery(Query):
     def __init__(self, columns, tables, constraints):
         super(NasaQuery, self).__init__(columns, tables, constraints)
 
-    def construct(self, columns, tables, constraints, spec: QuerySpec = None) -> str:
+    def construct(self, columns, tables, constraints) -> str:
         """all spaces in the SQL should be replaced with a plus (+) symbol."""
         _select = f"select+{columns}"
         _from = f"+from+{tables}"
