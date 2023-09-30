@@ -1,15 +1,13 @@
-"""Base
-"""
+"""Base"""
 
 from query.spec import QuerySpec, Specs
 
 
 class Query:
-    """A class for creating basic queries."""
+    """A base class for creating queries."""
 
     def __init__(self, columns="", tables="", constraints="", spec=Specs.DEFAULT):
-        """_summary_
-
+        """
         Args:
             columns (str, optional): The list of columns. Defaults to "*".
             tables (str, optional): The list of tables. Defaults to "".
@@ -26,7 +24,8 @@ class Query:
         return format(self._query_string, format_spec)
 
     def construct(self, columns, tables, constraints, spec: QuerySpec) -> str:
-        """Constructs the query string.
+        """
+        Constructs the query string.
 
         Args:
             columns (_type_): _description_
