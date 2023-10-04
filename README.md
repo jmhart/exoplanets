@@ -1,6 +1,6 @@
 # Exoplanets
 
-This repository contains a collection of projects related to gathering information from the NASA exoplanets API.
+This repository contains a collection of projects related to gathering and displaying information from the NASA exoplanets API.
 
 ## Data
 Performing transformations and analytics on the extracted data.
