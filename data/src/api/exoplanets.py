@@ -1,15 +1,15 @@
-"""api"""
+"""http"""
 
 import requests
 
 from query.nasa import NasaQuery
 
 
-def get_planets(nasa_query: NasaQuery):
-    """_summary_
+def get(nasa_query: NasaQuery):
+    """Gets exoplanet data from NASA archive.
 
     Args:
-        nasa_query (NasaQuery): _description_
+        nasa_query (NasaQuery): The NASA query argument.
 
     Returns:
         _type_: _description_

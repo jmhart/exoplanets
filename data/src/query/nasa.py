@@ -14,12 +14,12 @@ class NasaQuery(Query):
     https://exoplanetarchive.ipac.caltech.edu/docs/TAP/usingTAP.html
     """
 
-    def __init__(self, columns, tables, constraints):
+    def __init__(self, columns: str, tables: str, constraints: str):
         super(NasaQuery, self).__init__(columns, tables, constraints)
 
-    def construct(self, columns, tables, constraints) -> str:
+    def construct(self, columns: str, tables: str, constraints: str) -> str:
         """all spaces in the SQL should be replaced with a plus (+) symbol."""
-        _select = f"select+{columns}"
-        _from = f"+from+{tables}"
-        _where = f"+where+{constraints}"
+        _select = f"select+{columns.replace(' ', '+')}"
+        _from = f"+from+{tables.replace(' ', '+')}"
+        _where = f"+where+{constraints.replace(' ', '+')}"
         return f"{_select}{_from}{_where}&format=json"
